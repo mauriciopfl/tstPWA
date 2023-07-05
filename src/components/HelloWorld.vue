@@ -18,11 +18,7 @@
             target="_blank"
             variant="text"
           >
-            <v-icon
-              icon="mdi-view-dashboard"
-              size="large"
-              start
-            />
+            <v-icon icon="mdi-view-dashboard" size="large" start />
 
             Components
           </v-btn>
@@ -38,11 +34,7 @@
             target="_blank"
             variant="flat"
           >
-            <v-icon
-              icon="mdi-speedometer"
-              size="large"
-              start
-            />
+            <v-icon icon="mdi-speedometer" size="large" start />
 
             Get Started
           </v-btn>
@@ -56,20 +48,21 @@
             target="_blank"
             variant="text"
           >
-            <v-icon
-              icon="mdi-account-group"
-              size="large"
-              start
-            />
+            <v-icon icon="mdi-account-group" size="large" start />
 
             Community
           </v-btn>
         </v-col>
       </v-row>
+      <inst></inst>
     </v-responsive>
   </v-container>
 </template>
 
-<script lang="ts" setup>
-  //
+<script lang="ts">
+import { defineComponent } from "vue";
+import inst from "./inst.vue";
+export default defineComponent({
+  components: { inst },});
+//
 </script>
